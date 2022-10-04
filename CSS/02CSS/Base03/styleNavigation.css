@@ -1,0 +1,12 @@
+ul{
+    width: 15em;
+    background-color: bisque;
+    text-align: left;
+}
+.title{
+    
+   list-style-type: none;
+}
+li{
+    list-style-type: disc;
+}
