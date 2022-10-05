@@ -1,7 +1,13 @@
-ul{
-    width: 15em;
+.title1{
+    display: inline-block;
     background-color: bisque;
-    text-align: left;
+}
+
+ul{
+    vertical-align: top;
+    display: inline-block;
+    background-color: bisque;
+    max-width: 15em
 }
 .title{
     
@@ -9,4 +15,8 @@ ul{
 }
 li{
     list-style-type: disc;
+}
+div{
+   vertical-align: top;
+    display: inline-block;
 }
