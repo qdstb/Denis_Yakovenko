@@ -1,22 +1,35 @@
-.title1{
-    display: inline-block;
-    background-color: bisque;
+.Left{
+    float: left;
+height: 350px;
+    width: 15em;
+    background-color:bisque;
 }
 
-ul{
+.NvBlock{
+    padding-top: 0.1px;
     vertical-align: top;
-    display: inline-block;
-    background-color: bisque;
     max-width: 15em
+
 }
-.title{
-    
-   list-style-type: none;
+.RightTop{
+padding-top: 0.1px;
+background-color: aquamarine;
+margin-bottom:0em;
 }
-li{
-    list-style-type: disc;
+.RightBottom{
+    padding-top: 0.1px;
+    background-color:rgb(189, 156, 107);
+    margin-bottom:3em;
 }
-div{
-   vertical-align: top;
-    display: inline-block;
+.Goom{
+    clear: both;
+}
+.footer{
+    margin-top:-2em;
+    background-color: aquamarine;
+    clear: both;
+}
+.pic{
+    float: right;
+    width: 70px;
 }
