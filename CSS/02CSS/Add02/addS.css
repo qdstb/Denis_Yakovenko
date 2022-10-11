@@ -1,0 +1,25 @@
+.wrap{
+display: flex;
+flex-direction: row;
+}
+.Left{
+  float: left;
+  width: 15em;
+  background-color:bisque;
+}
+.RightTop{
+background-color: aquamarine;
+margin-bottom: -0.8em;
+}
+.RightBottom{
+  display: flex;
+  background-color:rgb(189, 156, 107);
+}
+
+.pic{
+  width: 70px;
+  align-self: flex-end;
+}
+.footer{
+  background-color: blueviolet;
+}
