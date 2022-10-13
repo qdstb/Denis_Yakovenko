@@ -1,0 +1,17 @@
+div
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1C6EA4;
+    border-radius: 0px 40px 0px 40px;
+    padding: 10px;
+}
+.pic span{
+    visibility: hidden;
+    position: absolute;
+    left: 160px;
+}
+ 
+.pic:hover span{
+visibility: visible;
+}

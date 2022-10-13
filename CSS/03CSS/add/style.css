@@ -5,7 +5,6 @@ flex-direction: row;
 }
 
 div.MenuLevel1 > div { 
-
     color: rgb(95, 77, 77);
     width:150px;
     background-color: rgb(212, 212, 212); 
@@ -14,13 +13,9 @@ div.MenuLevel1 > div {
     cursor: pointer 
     }
 div.MenuLevel2 {
-    
-font-size: 10px;
-transition: 4s 1s;
      width: 150px; display: none 
     }
 div.MenuLevel2 > div {
-transition: margin-bottom 2s;
      background-color: rgb(157, 98, 98);
      border: solid rgb(49, 49, 65) 1px; 
      cursor: pointer 
@@ -33,12 +28,12 @@ div.MenuLevel1 > div:hover div.MenuLevel2 {
      top: 100%; 
      z-index: 1
      }
-div.MenuLevel1 > div:hover
+
+     div.MenuLevel2:hover
 {
-    transform: translateY(100%);
+    transform:translateY(100%);
     transition: 1s;
 }
-
 @media all and (max-width: 600px)
 {
 div.MenuLevel1 {
@@ -55,9 +50,9 @@ div.MenuLevel1 {
             top: 0%; 
             z-index: 1
             }
-div.MenuLevel1 > div:hover
-{
-    transform: translateX(100%);
-    transition: 1s;
-}
+            div.MenuLevel2:hover
+            {
+                transform: translateX(100%);
+                transition: 1s;
+            }
 }
