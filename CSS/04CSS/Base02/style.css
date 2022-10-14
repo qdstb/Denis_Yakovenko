@@ -1,0 +1,25 @@
+
+table{
+    border-collapse: collapse;
+    border-left: 2px solid white; 
+    border-right: 2px solid white; 
+}
+#str1 td{
+    border: 1px;
+    font-weight: bold;
+}
+#str1{
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid white; 
+background-color: rgb(182, 178, 171);
+}
+tr:nth-child(2n+1) {
+     background-color:rgb(230, 230, 230) 
+    }
+td{
+    border: 2px dotted rgba(0,0,0,0.3);
+}
+tr:hover{
+    background-color: aquamarine;
+}

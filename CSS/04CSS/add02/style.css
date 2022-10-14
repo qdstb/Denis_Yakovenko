@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;
+    counter-reset:td 65;
+}
+td{
+    
+    text-align: center;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black
+}
+
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+tr:nth-child(even) td:nth-child(even){
+    background-color: black;
+    color: white;
+}
+td::before{
+    counter-increment: td -1;
+    content: counter(td);
+}
