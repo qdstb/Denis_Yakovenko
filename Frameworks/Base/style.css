@@ -1,0 +1,16 @@
+body{
+    margin-left: 1em;
+  }
+  #left{
+    color: rgb(23 121 186);
+        margin-bottom: 1em;
+    }
+    #right{
+        margin-bottom: 1em;
+    }
+@media screen and (max-width: 960px) {
+    .grid-x{
+display: block;
+margin-left: 2em;
+    }
+}
