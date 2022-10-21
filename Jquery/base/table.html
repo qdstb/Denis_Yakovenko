@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption align="bottom">ДАННЫЕ О СОТРУДНИКАХ</caption>
+        <tr id="str1">
+            <td>ФИО</td><td>пол</td><td>должность</td><td>дата.рож.</td><td>Данные 01</td><td>Данные 02</td>
+        </tr>
+        <div>
+        <tr id="tr2">
+            <td>Иванов Иван Иванович</td><td>М</td><td>начальник</td><td>01.01.1960</td><td>4567</td><td>3453</td>
+        </tr>
+        <tr id="tr3">
+            <td>Петрова Илонна Петровна</td><td>Ж</td><td>секретарь</td><td>01.01.1989</td><td>98795</td><td>46523</td>
+        </tr>
+        <tr id="tr4">
+            <td>Сидоров Илья Игоревич</td><td>М</td><td>бухгалтер</td><td>01.01.1979</td><td>743434</td><td>987979</td>
+        </tr>
+        <tr id="tr5">
+            <td>Пупин Федор Федорович</td><td>М</td><td>водитель</td><td>01.01.1963</td><td>74323434</td><td>9232379</td>
+        </tr>
+        <tr id="tr6">
+            <td>Крупин Сергей Иванович</td><td>М</td><td>водитель 2</td><td>01.01.1983</td><td>3234534</td><td>923123379</td>
+        </tr>
+    </div>
+    </table>
+
+    <button>Нет скрытых строк</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function($) {
+
+    $("#tr2") .click(function(){
+        $( "#tr2" ).hide();
+
+    });
+    $("#tr3") .click(function(){
+        $( "#tr3" ).hide();
+
+    });
+    $("#tr4") .click(function(){
+        $( "#tr4" ).hide();
+
+    });
+    $("#tr5") .click(function(){
+        $( "#tr5" ).hide();
+
+    });
+    $("#tr6") .click(function(){
+        $( "#tr6" ).hide();
+    });
+    
+$("button") .click(function(){
+        $( "tr" ).show();
+
+    });
+    $("tr") .click(function(){
+        $( "button" ).html("Есть скрытые строки")
+        $("button") .click(function(){
+            $("button").html("Нет скрытых строк")
+        });
+    });
+});
+</script>
+</body>
+</html>
