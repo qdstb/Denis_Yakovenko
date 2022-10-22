@@ -12,8 +12,8 @@
     <form action="#">
         <fieldset>
 
-            <input  type="text" name="pass">*Пароль <br>
-            <input  type="text" name="passchek">*Повторите пароль <br>
+            <input  type="text" name="pass" id="pas1">*Пароль <br>
+            <input  type="text" name="passchek" id="pas2">*Повторите пароль <br>
             <br> <input type="submit" value="Отправить" name="In">
 
         </fieldset>
@@ -23,7 +23,10 @@
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <script>
    $(document).ready(function($){
-
+    $('#pas1').keypress(function(){
+        $('#pas1').css("backgroundColor", "green")
+        $('#pas2').css("backgroundColor", "green")
+});
 
 
    });
