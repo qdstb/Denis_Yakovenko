@@ -1,3 +1,13 @@
-fieldset{
-    width: 400px;
-}
+input[type="password"] {
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .password-mismatch {
+    border-color: red;
+  }
+
+  .password-match {
+    border-color: green;
+  }

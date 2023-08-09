@@ -21,7 +21,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
    $(document).ready(function($){
     $('#pas1').keypress(function(){
         $('#pas1').css("backgroundColor", "green")
@@ -30,9 +30,20 @@
 
 
    });
+</script> -->
+<script>
+    $(document).ready(function() {
+      $('#confirm-password').on('input', function() {
+        var password = $('#password').val();
+        var confirmPassword = $(this).val();
 
-
-
-</script>
+        if (password === confirmPassword) {
+          $(this).css("backgroundColor", "red").css("backgroundColor", "green");
+        } else {
+          $(this).css("backgroundColor", "green").css("backgroundColor", "red");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
